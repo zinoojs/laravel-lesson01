@@ -9,6 +9,23 @@
 </head>
 
 <body>
+    {{-- {{ $name }} --}}
+    {{-- @{{ $name }} pure --}}
+    {{-- {{ $users }} --}}
+
+    @foreach ($users as $u)
+        <li>{{ $u }}</li>
+    @endforeach
+
+
+    {{-- <?php
+    ?>
+    @php
+        foreach ($variable as $key => $value) {
+            # code...
+        }
+    @endphp --}}
+
     <h1>Home Page</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam quibusdam distinctio fugit illo facere
         esse maiores beatae accusamus id architecto explicabo, sed ex vero incidunt, ipsum nihil voluptatem impedit.</p>
