@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TodoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,6 +13,7 @@ Route::get('/', function () {
 Route::get('/homes', [HomeController::class, 'index'])->name('homes.index');
 Route::get('/abouts', [AboutController::class, 'index'])->name('abouts.index');
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+Route::get('/todos', [TodoController::class, 'index'])->name('todos.index');
 
 // Route::get('/home', function () {
 //     // return view('home', ['name' => 'bobo']);
